@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+       
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+            <!-- style="@style/BlueTab" --> 
+           
+
+     	<FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+            
+            
+            <!--
+    			Adding weight to frame < widget == > Solves table strech problem, but breaks scheduling 0 < 1
+    			
+   			 -->
+    <!--<Button
+	        android:id="@+id/removeRecording"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:text="Delete" />    
+    -->
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	
+	  <TextView
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:id="@+id/info"
+		android:text="@string/details" />
+		
+	 <EditText
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:singleLine="true"
+        android:hint="@string/login"
+        android:focusableInTouchMode="true"
+        android:inputType="textCapWords"/>
+        
+	 <EditText
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:singleLine="true"
+        android:hint="@string/password"
+        android:focusableInTouchMode="true"
+        android:inputType="textCapWords"/>
+	    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="bottom"
+		    android:layout_marginTop="10dip">	
+		    
+		    <Button
+		     	android:layout_width="fill_parent"
+	  			android:layout_height="wrap_content" 
+		    	android:text="@string/login" 
+		    	android:id="@+id/loginButton" /> 
+		    <Button
+		    	android:layout_width="fill_parent"
+	  			android:layout_height="wrap_content" 
+		    	android:text="@string/signup" 
+		    	android:id="@+id/registerButton" /> 			    	 
+	</LinearLayout>
+	
+</LinearLayout>

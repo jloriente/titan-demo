@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">titan-demo</string>
+    <string name="about">about</string>
+    <string name="login">login</string>
+    <string name="news">news</string>
+    <string name="password">password</string>
+    <string name="signup">signup</string>
+    <string name="details">Details....</string>
+</resources>
