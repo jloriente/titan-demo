@@ -11,18 +11,18 @@ import android.widget.TabHost;
 
 public class Main extends TabActivity {
 	TabHost tabHost;
-	
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
+
         // CREATE TABS
-        Resources res = getResources(); // Resource object to get Drawables
-        tabHost = getTabHost();  // The activity TabHost
-        TabHost.TabSpec spec;  // Reusable TabSpec for each tab
-        Intent intent;  // Reusable Intent for each tab
+        Resources res = getResources();	 // Resource object to get Drawables
+        tabHost = getTabHost(); 		 // The activity TabHost
+        TabHost.TabSpec spec;  			 // Reusable TabSpec for each tab
+        Intent intent;  				 // Reusable Intent for each tab
 
         // Create an Intent to launch an Activity for the tab (to be reused)
         // Initialize a TabSpec for each tab and add it to the TabHost
@@ -30,7 +30,7 @@ public class Main extends TabActivity {
         spec = tabHost.newTabSpec("news").setIndicator("News",
                           res.getDrawable(R.drawable.news))
                       .setContent(intent);
-        
+
         tabHost.addTab(spec);
 
         // Do the same for the other tabs
@@ -45,9 +45,9 @@ public class Main extends TabActivity {
                           res.getDrawable(R.drawable.about))
                       .setContent(intent);
         tabHost.addTab(spec);
-		
+
         tabHost.setCurrentTab(0);
-        
-     
+
+
     }
 }
